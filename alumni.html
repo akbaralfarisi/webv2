@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daftar Alumni - SMA Negeri 4 Tangerang</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+      color: #1e293b;
+    }
+    header {
+      background-color: #2563eb;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      box-shadow: 0 4px 10px rgb(37 99 235 / 0.3);
+    }
+    header img {
+      width: 90px;
+      margin-bottom: 10px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    main.container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .btn-back {
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgb(37 99 235 / 0.4);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      margin-bottom: 30px;
+    }
+    .btn-back:hover {
+      background-color: #1e40af;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgb(30 64 175 / 0.6);
+    }
+    .alumni-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 22px;
+    }
+    .alumni-card {
+      background-color: white;
+      border-radius: 15px;
+      padding: 15px 10px 20px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.07);
+      cursor: pointer;
+      transition: box-shadow 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .alumni-card:hover {
+      box-shadow: 0 8px 20px rgb(37 99 235 / 0.3);
+      transform: translateY(-5px);
+    }
+    .alumni-card img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 12px;
+      border: 3px solid #2563eb;
+      box-shadow: 0 2px 7px rgb(37 99 235 / 0.4);
+    }
+    .alumni-name {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #1e293b;
+      user-select: none;
+    }
+    footer {
+      text-align: center;
+      padding: 24px 10px;
+      color: #64748b;
+      font-size: 14px;
+      margin-top: 60px;
+      border-top: 1px solid #e2e8f0;
+    }
+    .marquee-container {
+  overflow: hidden;
+  background-color: #eff6ff;
+  border-top: 1px solid #cbd5e1;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 10px 0;
+  animation: marquee 30s linear infinite;
+  color: #1e3a8a;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-sekolah.png" alt="Logo SMA Negeri 4 Tangerang" />
+    <h1>Daftar Siswa 2024/2025</h1>
+  </header>
+<div class="marquee-container">
+  <div class="marquee-text">DAFTAR ALUMNI SISWA KELAS XII.9 2024/2025 | Perpisahan bukan akhir dari segalanya, tapi awal dari petualangan baru yang lebih menantang. Mari terus melangkah dengan semangat dan mimpi yang besar."</div>
+</div>
+  <main class="container">
+    <a href="index.html" class="btn-back">← Kembali ke Beranda</a>
+
+    <section class="alumni-grid">
+      <a href="profil-aditiya.html" class="alumni-card">
+        <img src="foto/foto1.jpg" alt="aditiya" />
+        <div class="alumni-name">Adi Tiya</div>
+      </a>
+      <a href="profil-aisyi.html" class="alumni-card">
+        <img src="foto/aisyi.jpg" alt="aisyi ruhama" />
+        <div class="alumni-name">Aisyi Ruhama</div>
+      </a>
+      <a href="profil-ajeng.html" class="alumni-card">
+        <img src="foto/ajeng.jpg" alt="ajeng lufiyani" />
+        <div class="alumni-name">Ajeng Lufiyani</div>
+      </a>
+      <a href="profil-akbar.html" class="alumni-card">
+        <img src="foto/akbar.jpg" alt="akbar alfarisi" />
+        <div class="alumni-name">Akbar Alfarisi</div>
+      </a>
+      <a href="profil-amel.html" class="alumni-card">
+        <img src="foto/foto5.jpg" alt="amelia rosayu" />
+        <div class="alumni-name">Amelia Rosayu</div>
+      </a>
+      <a href="profil-ananda.html" class="alumni-card">
+        <img src="foto/nanda.jpg" alt="Ananda Ridho Murjyana" />
+        <div class="alumni-name">Ananda Ridho Murjyana</div>
+        <a href="profil-angga.html" class="alumni-card">
+        <img src="foto/angga.jpg" alt="Angga Saputra" />
+        <div class="alumni-name">Angga Saputra</div>
+      </a>
+      <a href="profil-atikah.html" class="alumni-card">
+        <img src="foto/atikah.jpg" alt="Atikah Nur Anggraini" />
+        <div class="alumni-name">Atikah Nur Anggraini</div>
+      </a>
+      <a href="profil-aulia.html" class="alumni-card">
+        <img src="foto/foto9.jpg" alt="Aulia Dwi Rahayu" />
+        <div class="alumni-name">Aulia Dwi Rahayu</div>
+      </a>
+      <a href="profil-aulida.html" class="alumni-card">
+        <img src="foto/aulida.jpg" alt="Aulida Pitriyani" />
+        <div class="alumni-name">Aulida Pitriyani</div>
+      </a>
+      <a href="profil-derby.html" class="alumni-card">
+        <img src="foto/derby.jpg" alt="Derby Aqmarina Azzahra Steviano" />
+        <div class="alumni-name">Derby Aqmarina Azzahra Steviano</div>
+      </a>
+      <a href="profil-dimas.html" class="alumni-card">
+        <img src="foto/dimas.jpg" alt="Dimas Kurniawan" />
+        <div class="alumni-name">Dimas Kurniawan</div>
+      </a>
+      <a href="profil-dini.html" class="alumni-card">
+        <img src="foto/dini.jpg" alt="Dini Safitri" />
+        <div class="alumni-name">Dini Safitri</div>
+      </a>
+      <a href="profil-febrian.html" class="alumni-card">
+        <img src="foto/febrian.jpg" alt="Febrian Ardiansyah" />
+        <div class="alumni-name">Febrian Ardiansyah</div>
+      </a>
+      <a href="profil-gandrung.html" class="alumni-card">
+        <img src="foto/gandrung.jpg" alt="Gandrung" />
+        <div class="alumni-name">Gandrung Panca Prasetya</div>
+      </a>
+      <a href="profil-gigih.html" class="alumni-card">
+        <img src="foto/foto16.jpg" alt="Gigih" />
+        <div class="alumni-name">Gigih Denata Putra</div>
+      </a>
+      <a href="profil-lingga.html" class="alumni-card">
+        <img src="foto/lingga.jpg" alt="Lingga" />
+        <div class="alumni-name">Lingga Aditia Tama</div>
+      </a>
+      <a href="profil-maulida.html" class="alumni-card">
+        <img src="foto/foto18.jpg" alt="Maulida" />
+        <div class="alumni-name">Maulida Dewi Pratiwi</div>
+      </a>
+      <a href="profil-fadlu.html" class="alumni-card">
+        <img src="foto/fadlu.jpg" alt="Fadlu" />
+        <div class="alumni-name">Muhamad Fadlu Rahman</div>
+      </a>
+      <a href="profil-dzabar.html" class="alumni-card">
+        <img src="foto/dzabar.jpg" alt="Dzabar" />
+        <div class="alumni-name">Muhammad Dzabar Al Qowwiyu Farel</div>
+      </a>
+      <a href="profil-farhan.html" class="alumni-card">
+        <img src="foto/farhan.jpg" alt="Farhan" />
+        <div class="alumni-name">Muhammad Farhan Apriyansyah</div>
+      </a>
+      <a href="profil-rama.html" class="alumni-card">
+        <img src="foto/rama.jpg" alt="Rama" />
+        <div class="alumni-name">Muhammad Nur Ramadhan Purwanto</div>
+      </a>
+      <a href="profil-mutia.html" class="alumni-card">
+        <img src="foto/mutia.jpg" alt="Mutia" />
+        <div class="alumni-name">Mutia Kamal</div>
+      </a>
+      <a href="profil-bila.html" class="alumni-card">
+        <img src="foto/foto24.jpg" alt="Bila" />
+        <div class="alumni-name">Nabiilah Fairuz Zahraa</div>
+      </a>
+      <a href="profil-nayla.html" class="alumni-card">
+        <img src="foto/nayla.jpg" alt="Nayla" />
+        <div class="alumni-name">Nayla Rahmi Rizqyta</div>
+      </a>
+      <a href="profil-neisya.html" class="alumni-card">
+        <img src="foto/foto26.jpg" alt="Neisya" />
+        <div class="alumni-name">Neisya Amelia Putri</div>
+      </a>
+      </a>
+      <a href="profil-nicky.html" class="alumni-card">
+        <img src="foto/nicky.jpg" alt="Nicky" />
+        <div class="alumni-name">Nicky Al farizky</div>
+      </a>
+      <a href="profil-rafly.html" class="alumni-card">
+        <img src="foto/rafly.jpg" alt="Rafly" />
+        <div class="alumni-name">Rafly Galih Saputra</div>
+      </a>
+      <a href="profil-salwa.html" class="alumni-card">
+        <img src="foto/salwa.jpg" alt="Salwa" />
+        <div class="alumni-name">Salwa Alifah Ridwan</div>
+      </a>
+      <a href="profil-sania.html" class="alumni-card">
+        <img src="foto/sania.jpg" alt="Sania" />
+        <div class="alumni-name">Sania Riahul Husnu</div>
+      </a>
+      <a href="profil-saskia.html" class="alumni-card">
+        <img src="foto/saskia.jpg" alt="Saskia" />
+        <div class="alumni-name">Saskia Herlinda</div>
+      </a>
+      <a href="profil-shonnia.html" class="alumni-card">
+        <img src="foto/shonnia.jpg" alt="Shonnia" />
+        <div class="alumni-name">Shonnia Alifia Rizqina Kharismawati</div>
+      </a>
+      <a href="profil-sukatma.html" class="alumni-card">
+        <img src="foto/foto33.jpg" alt="Sukatma" />
+        <div class="alumni-name">Sukatma</div>
+      </a>
+      <a href="profil-wanda.html" class="alumni-card">
+        <img src="foto/wanda2.jpg" alt="Wanda" />
+        <div class="alumni-name">Wanda Citra Hallimatussadiyah</div>
+      </a>
+      <a href="profil-wilson.html" class="alumni-card">
+        <img src="foto/foto35.jpg" alt="Wilson" />
+        <div class="alumni-name">Wilson Imanuel</div>
+      </a>
+      <a href="profil-winda.html" class="alumni-card">
+        <img src="foto/winda.jpg" alt="Winda" />
+        <div class="alumni-name">Winda Mashadi Yanti</div>
+      </a>
+      <a href="profil-zaila.html" class="alumni-card">
+        <img src="foto/zaila.jpg" alt="Zaila" />
+        <div class="alumni-name">Zaila Nurprajanti</div>
+      </a>
+      <a href="profil-zulfa.html" class="alumni-card">
+        <img src="foto/foto38.jpg" alt="Zulfa" />
+        <div class="alumni-name">Zulfa Ayu Nurazizah</div>
+      </a>
+      <!-- Tambah alumni lain sesuai kebutuhan -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Alamat: Jl. Padasuka I Pabuaran Tumpeng Karawaci Kota Tangerang, Banten 15025
+ Phone : 021 5520538 | E-mail : sman4tangerangkota@gmail.com</p>
+  </footer>
+</body>
+</html>

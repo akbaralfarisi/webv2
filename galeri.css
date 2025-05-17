@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f9fafb;
+  color: #1e293b;
+}
+header {
+  text-align: center;
+  background-color: #2563eb;
+  padding: 20px 10px 30px;
+  color: white;
+  position: relative;
+}
+header img {
+  width: 80px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+  font-size: 0.9rem;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}.media-thumb {
+  width: 100%;
+  height: 150px;
+  border: 3px solid #e2e8f0; /* bingkai rapi */
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.media-thumb:hover {
+  transform: scale(1.05);
+}
+
+
+/* Popup zoom */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+}
+.popup #popupContent {
+  max-width: 90%;
+  max-height: 80%;
+}
+.popup img, .popup video {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+.close {
+  position: absolute;
+  top: 20px; right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.download {
+  margin-top: 10px;
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.download:hover {
+  background: #16a34a;
+}
+.back-button {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.back-button a {
+  background-color: #1e40af;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+  background-color: #1d4ed8;
+}
+
+.school-footer {
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+  background-color: #f1f5f9;
+}

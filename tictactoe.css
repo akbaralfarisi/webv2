@@ -1,0 +1,214 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f172a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start-screen {
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+.warning {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.back-button {
+  background-color: #dc2626;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px 0;
+}
+
+.score {
+  text-align: center;
+  flex: 1;
+  font-size: 16px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  gap: 2px;
+  margin: 10px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background-color: #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.cell:hover {
+  background-color: #334155;
+}
+
+.after-game {
+  display: none;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #facc15;
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-weight: bold;
+  display: none;
+  z-index: 10;
+}
+.home-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-home {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-home:hover {
+  background-color: #2980b9;
+}
+.player-info {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+  user-select: none;
+  white-space: nowrap;
+}
+#backMenuBtn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 1001;
+  user-select: none;
+}
+/* Pastikan Back Menu tetap di pojok kanan atas */
+.top-bar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+/* Scoreboard di bawah top bar dengan jarak */
+.scoreboard {
+  margin: 60px auto 20px auto; /* beri jarak top dari fixed top-bar */
+  width: fit-content;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Board di bawah scoreboard */
+.board {
+  margin: 0 auto 40px auto;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 5px;
+}
+
+/* Tombol Kembali ke Beranda di bawah, full tengah */
+.home-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.btn-home {
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}

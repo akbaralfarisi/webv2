@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="tictactoe.css">
+</head>
+<body>
+  <div id="playerInfo" class="player-info"></div>
+  <div class="top-bar">
+  <button id="backMenuBtn" onclick="goBack()">Back Menu</button>
+  </div>
+
+  <div class="scoreboard">
+    <div class="score" id="scorePlayer1"></div>
+    <div class="score" id="scorePlayer2"></div>
+  </div>
+
+  <div id="board" class="board"></div>
+
+  <div class="after-game">
+    <p id="winnerMessage"></p>
+    <button onclick="playAgain()">Main Lagi</button>
+    <button onclick="goBack()">Kembali ke Mode</button>
+  </div>
+
+  <div id="popup" class="popup">LAWAN KOMPUTER AJA KALAH CUPU!</div>
+
+  <script src="tictactoe.js"></script>
+<div class="home-button-wrapper">
+  <button onclick="goToHome()" class="btn-home">Kembali ke Beranda</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeri Kenangan - SMA Negeri 4 Tangerang</title>
+  <link rel="stylesheet" href="galeri.css" />
+</head>
+<body>
+  <header>
+    <img src="logo-sekolah.png" alt="Logo SMA Negeri 4 Tangerang" />
+    <h1>SMA NEGERI 4 TANGERANG</h1>
+    <div class="marquee">
+      <p>GALERI SISWA KELAS 12.9 2024/2024 | SUKSES SEMUA!</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="galeri-foto">
+      <h2>Foto Kenangan</h2>
+      <div class="media-grid">
+        <img src="images/foto1.jpg" alt="Kenangan 1" class="media-thumb" />
+        <img src="images/foto2.jpg" alt="Kenangan 2" class="media-thumb" />
+        <img src="images/foto3.jpg" alt="Kenangan 3" class="media-thumb" />
+        <img src="images/foto4.jpg" alt="Kenangan 3" class="media-thumb" />
+        <img src="images/foto5.jpg" alt="Kenangan 3" class="media-thumb" />
+        <img src="images/foto6.jpg" alt="Kenangan 3" class="media-thumb" />
+        <img src="images/foto7.jpg" alt="Kenangan 3" class="media-thumb" />
+        <img src="images/foto8.jpg" alt="Kenangan 3" class="media-thumb" />
+      </div>
+    </section>
+
+    <section class="galeri-video">
+      <h2>Video Kenangan</h2>
+      <div class="media-grid">
+        <video src="video/video1.mp4" controls class="media-thumb"></video>
+        <video src="video/video2.mp4" controls class="media-thumb"></video>
+        <video src="video/video3.mp4" controls class="media-thumb"></video>
+      </div>
+    </section>
+  </main>
+
+  <div class="popup" id="popup">
+    <span class="close" id="closeBtn">&times;</span>
+    <a id="downloadBtn" download><button class="download">Download</button></a>
+    <div id="popupContent"></div>
+  </div>
+
+  <script src="galeri.js"></script>
+  <!-- Tombol Kembali ke Beranda -->
+<div class="back-button">
+  <a href="index.html">← Kembali ke Beranda</a>
+</div>
+
+<!-- Alamat Sekolah -->
+<footer class="school-footer">
+  <p>
+    Alamat: Jl. Padasuka I Pabuaran Tumpeng Karawaci Kota Tangerang, Banten 15025<br>
+    Phone: 021 5520538 | E-mail: sman4tangerangkota@gmail.com
+  </p>
+</footer>
+</body>
+</html>
